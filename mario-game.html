@@ -15,22 +15,33 @@
             <div class="hud-left">
                 <div class="stat-card">
                     <div class="stat-label">SCORE</div>
-                    <div class="stat-value" id="score">0</div>
+                    <div class="stat-value" id="score">000</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">HI SCORE</div>
+                    <div class="stat-value" id="hiScore">000</div>
                 </div>
             </div>
             <div class="hud-center">
                 <div id="gameTitle">⚡ CYBER NERD RUNNER 3025</div>
+                <div class="progress-container">
+                    <div class="progress-label">SYSTEM BREACH</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                        <div class="progress-text" id="progressText">0%</div>
+                    </div>
+                </div>
                 <div id="boostIndicator">
                     <div class="boost-bar">
                         <div class="boost-fill"></div>
                     </div>
-                    <span class="boost-text">BOOST ACTIVE</span>
+                    <span class="boost-text">BOOST</span>
                 </div>
             </div>
             <div class="hud-right">
                 <div class="stat-card">
                     <div class="stat-label">TARGET</div>
-                    <div class="stat-value" id="target">100</div>
+                    <div class="stat-value" id="target">200</div>
                 </div>
             </div>
         </div>
@@ -46,6 +57,15 @@
                     <span>BOOST</span>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <!-- Start Screen -->
+    <div id="startScreen">
+        <div class="start-content">
+            <div class="start-game-title">⚡ CYBER NERD RUNNER 3025 ⚡</div>
+            <div class="start-title">💻 READY TO HACK? 💻</div>
+            <div class="start-subtitle">PRESS ANY KEY TO BREACH THE SYSTEM</div>
         </div>
     </div>
     
@@ -66,7 +86,7 @@
             </div>
             <button onclick="restartGame()" class="btn-primary">
                 <span class="btn-icon">⚡</span>
-                <span class="btn-text">RECONNECT</span>
+                <span class="btn-text" id="btnText">RECONNECT</span>
             </button>
         </div>
     </div>

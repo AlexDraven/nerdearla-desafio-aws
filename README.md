@@ -14,13 +14,15 @@ CYBER NERD RUNNER 3025 es un juego de endless runner en primera persona con est�
 - **Gráficos 3D**: Renderizado con Three.js en primera persona
 - **5 Tipos de Enemigos**: Skull, Spider, Robot, Alien y Demon con diseños únicos
 - **Sistema de Boost**: Acelera el juego para mayor intensidad
-- **Estética Cyberpunk**: Colores neón, niebla dinámica y efectos visuales
-- **HUD Profesional**: Interfaz moderna con efectos glassmorphism
+- **Estética Cyberpunk**: Colores verde neón y efectos visuales
+- **HUD Profesional**: Interfaz moderna optimizada para videojuegos indie
+- **Sistema de Hi-Score**: Guarda tu mejor puntuación localmente
+- **Barra de Progreso**: Indicador visual del avance hacia la victoria
 - **Controles Simples**: Fácil de aprender, difícil de dominar
 
 ## 🎯 Objetivo
 
-Alcanza 100 puntos esquivando enemigos. Cada enemigo evitado suma 10 puntos. La velocidad aumenta progresivamente cada 20 puntos.
+Alcanza 200 puntos esquivando enemigos. Cada enemigo evitado suma 10 puntos. La velocidad aumenta exponencialmente con el progreso.
 
 ## 🕹️ Controles
 
@@ -48,10 +50,11 @@ nerdearla-desafio-aws/
 
 ## 🎨 Diseño Visual
 
-- **Colores Principales**: Verde neón (#00ff41) y rojo sangre (#8b0000)
-- **Tipografía**: Press Start 2P (estilo retro gaming)
-- **Efectos**: Niebla dinámica, partículas y glassmorphism
-- **Enemigos**: Diseños voxel inspirados en Space Invaders
+- **Colores Principales**: Verde neón (#00ff41) para UI cyberpunk
+- **Tipografía**: Courier New (estilo hacker terminal)
+- **UI/UX**: Diseño optimizado siguiendo principios de videojuegos indie
+- **Efectos**: Niebla dinámica, partículas y efectos de glow
+- **Enemigos**: Diseños voxel con 5 colores únicos por tipo
 
 ## 🚀 Instalación y Uso
 
@@ -82,9 +85,10 @@ No requiere instalación de dependencias adicionales.
 
 ### Progresión
 - Velocidad base: 0.3 unidades/frame
-- Incremento: +0.03 cada 20 puntos
-- Velocidad máxima: 0.5 unidades/frame
-- Meta: 100 puntos para ganar
+- Incremento: Exponencial basado en score
+- Fórmula: velocidad = 0.3 * (1 + score/100)²
+- Meta: 200 puntos para ganar
+- Hi-Score: Persistente entre sesiones
 
 ## 🔧 Personalización
 
@@ -101,7 +105,8 @@ El juego es fácilmente personalizable:
 - ✅ Firefox
 - ✅ Safari
 - ✅ Edge
-- 📱 Responsive design para móviles
+- 🎮 UI optimizada para gaming
+- 💾 LocalStorage para hi-scores
 
 ## 🏆 Créditos
 

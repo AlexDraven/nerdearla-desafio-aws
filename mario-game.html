@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ CYBER RUNNER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1 id="gameTitle">⚡ CYBER RUNNER</h1>
+        <div id="gameUI">
+            <div id="score">SCORE: 0</div>
+            <div id="target">TARGET: 100</div>
+        </div>
+        <canvas id="gameCanvas" width="1200" height="600"></canvas>
+        <div id="instructions">
+            <span class="key">SPACE</span> to jump • Reach 100 points to win
+        </div>
+        <div id="gameOver">
+            <div class="modal-content">
+                <h2>CONNECTION LOST</h2>
+                <p>FINAL SCORE: <span id="finalScore">0</span></p>
+                <button onclick="restartGame()" class="play-btn">⚡ RECONNECT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

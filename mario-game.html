@@ -3,30 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚡ CYBER RUNNER</title>
+    <title>⚡ CYBER NERD RUNNER</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-    <div id="gameContainer">
-        <h1 id="gameTitle">⚡ CYBER RUNNER</h1>
-        <div id="gameUI">
-            <div id="score">SCORE: 0</div>
-            <div id="target">TARGET: 100</div>
-        </div>
-        <canvas id="gameCanvas" width="1200" height="600"></canvas>
-        <div id="instructions">
-            <span class="key">SPACE</span> to jump • Reach 100 points to win
-        </div>
-        <div id="gameOver">
-            <div class="modal-content">
-                <h2>CONNECTION LOST</h2>
-                <p>FINAL SCORE: <span id="finalScore">0</span></p>
-                <button onclick="restartGame()" class="play-btn">⚡ RECONNECT</button>
+    <!-- HUD Overlay -->
+    <div id="hud">
+        <div class="hud-top">
+            <div class="hud-left">
+                <div class="stat-card">
+                    <div class="stat-label">SCORE</div>
+                    <div class="stat-value" id="score">0</div>
+                </div>
             </div>
+            <div class="hud-center">
+                <div id="gameTitle">⚡ CYBER NERD RUNNER</div>
+                <div id="boostIndicator">
+                    <div class="boost-bar">
+                        <div class="boost-fill"></div>
+                    </div>
+                    <span class="boost-text">BOOST ACTIVE</span>
+                </div>
+            </div>
+            <div class="hud-right">
+                <div class="stat-card">
+                    <div class="stat-label">TARGET</div>
+                    <div class="stat-value" id="target">100</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hud-bottom">
+            <div class="controls-hint">
+                <div class="control-group">
+                    <kbd>A</kbd><kbd>D</kbd>
+                    <span>CHANGE LANES</span>
+                </div>
+                <div class="control-group">
+                    <kbd>SPACE</kbd>
+                    <span>BOOST</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Game Canvas -->
+    <div id="gameCanvas"></div>
+    
+    <!-- Game Over Modal -->
+    <div id="gameOver">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-icon">⚠️</div>
+            <h2 class="modal-title">CONNECTION LOST</h2>
+            <div class="modal-stats">
+                <div class="final-stat">
+                    <span class="stat-label">FINAL SCORE</span>
+                    <span class="stat-value" id="finalScore">0</span>
+                </div>
+            </div>
+            <button onclick="restartGame()" class="btn-primary">
+                <span class="btn-icon">⚡</span>
+                <span class="btn-text">RECONNECT</span>
+            </button>
         </div>
     </div>
 
     <script src="game.js"></script>
 </body>
-</html>
+</html> 

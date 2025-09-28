@@ -42,7 +42,7 @@ Alcanza 200 puntos esquivando enemigos. Cada enemigo evitado suma 10 puntos. La 
 
 ```
 nerdearla-desafio-aws/
-├── mario-game.html    # Archivo principal HTML
+├── index.html        # Archivo principal HTML
 ├── game.js           # Lógica del juego y motor 3D
 ├── style.css         # Estilos y efectos visuales
 └── README.md         # Documentación
@@ -59,7 +59,7 @@ nerdearla-desafio-aws/
 ## 🚀 Instalación y Uso
 
 1. Clona o descarga el repositorio
-2. Abre `mario-game.html` en tu navegador web
+2. Abre `index.html` en tu navegador web
 3. ¡Disfruta del juego!
 
 No requiere instalación de dependencias adicionales.

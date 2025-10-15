@@ -5,6 +5,9 @@
 
 Un juego 3D de runner cyberpunk desarrollado con Three.js, inspirado en los clásicos arcade de los 80s.
 
+Probalo on-line
+https://alexdraven.github.io/nerdearla-desafio-aws/
+
 ## 🎮 Descripción
 
 CYBER NERD RUNNER 3025 es un juego de endless runner en primera persona con estética cyberpunk. El jugador debe esquivar enemigos voxelizados mientras corre por un mundo futurista lleno de neón y efectos visuales.
